@@ -10,6 +10,7 @@ import SearchBar from "@/components/SearchBar";
 import { Loader2 } from "lucide-react";
 import { WeatherData, ForecastDay, HourlyForecast as HourlyForecastType, WeatherAlert } from "@/types/weather";
 import { getCurrentWeather, getForecast, getWeatherAlerts } from "@/services/weatherService";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   const [loading, setLoading] = useState(false);
@@ -93,6 +94,7 @@ const Index = () => {
           )}
         </div>
       </div>
+      <Footer />
     </>
   );
 };
