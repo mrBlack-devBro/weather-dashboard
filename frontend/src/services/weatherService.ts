@@ -1,5 +1,5 @@
 // src/services/weatherService.ts (frontend)
-const BACKEND_URL = "http://localhost:5000/api/weather";
+const BACKEND_URL = import.meta.env.VITE_API_BASE_URL;
 
 export const getCurrentWeather = async (lat: number, lon: number) => {
   const response = await fetch(`${BACKEND_URL}/current?lat=${lat}&lon=${lon}`);
