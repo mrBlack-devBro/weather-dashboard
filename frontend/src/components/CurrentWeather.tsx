@@ -19,7 +19,7 @@ const CurrentWeather = ({ data }: CurrentWeatherProps) => {
               className="w-32 h-32 animate-pulse-glow"
             />
             <div>
-              <h3 className="text-5xl font-bold temperature-text">
+              <h3 className="text-4xl font-bold temperature-text">
                 {data.temperature}°C
               </h3>
               <p className="text-2xl text-muted-foreground mt-2 capitalize">
